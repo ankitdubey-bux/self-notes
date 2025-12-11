@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset for proper text display -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive for mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome icons CDN -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+          integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- Main container -->
+<div class="container">
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+
+        <!-- Menu icon (hamburger icon) -->
+        <div class="menu-bar">
+
+            <!-- When clicked, barHide() function will open/close menu -->
+            <div onclick="barHide()" id="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Sliding menu section (hidden by default) -->
+            <div class="slide hide">
+                <ul>
+                    <!-- Each list item contains link + icon -->
+                    <li>
+                        <a href="https://www.geeksforgeeks.org/python/python-programming-language-tutorial/">
+                            <i class="fa-brands fa-python"></i> python
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.geeksforgeeks.org/java/java/">
+                            <i class="fa-brands fa-java"></i> Java
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.geeksforgeeks.org/javascript/javascript-tutorial/">
+                            <i class="fa-brands fa-java"></i> JavaScript
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.geeksforgeeks.org/machine-learning/machine-learning/">
+                            <i class="fa-solid fa-laptop-code"></i> Machine learning
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.geeksforgeeks.org/cpp/c-plus-plus/">
+                            <i class="fa-solid fa-c"></i> ++
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://drive.google.com/drive/folders/1bPouoIyn5WUmcQPiEU3WYQgeBtW-k80Y?usp=sharing">
+                            <i class="fa-solid fa-notes-medical"></i> nimcet
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Website title inside navbar -->
+        <p id="text">Program Notes</p>
+
+        <!-- Navigation links (right side) -->
+        <a href="https://www.instagram.com/ankit__dubey7667?igsh=MTV0dHlyb2ZnNGdqZA==" class="nav-link">
+            <i class="fa-brands fa-square-instagram"></i> Instgram
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1NTtsBQUm79FlbT29tot7WIY5pgio3qGm?usp=sharing" class="nav-link">
+            <i class="fa-solid fa-file-arrow-up"></i> upload
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1xWrf4gpiB_CK_Q3DUL-HBaPzgeyyaVi2?usp=sharing" class="nav-link">
+            <i class="fa-solid fa-notes-medical"></i> Nimcet
+        </a>
+
+        <a href="https://ankitdubey-bux.github.io/typing-test-/" class="nav-link" id="typing">
+            <i class="fa-solid fa-gamepad"></i> Typing
+        </a>
+    </div>
+
+    <!-- Animated typing text container -->
+    <div class="container">
+        <h1>
+            <!-- Custom typing effect text -->
+            <span class="txt-type" 
+                  data-wait="1500" 
+                  data-words='["welcome to my website", "This website is created for store note only", "Created by ankit to store self notes"]'>
+            </span>
+        </h1>
+    </div>
+
+    <!-- First image section with boxes -->
+    <div class="clickimg1">
+
+        <!-- Box 1 -->
+        
+        <div class="box2">
+            <a href="https://drive.google.com/drive/folders/1Vs6Egge5wK2mLW9N_b5EK3babUPnm6dy?usp=sharing" target="_blank">
+                <img src="c.jpg" alt="C code tutorial">
+            </a>
+            <p>
+                <b><i>C++ programming notes</i></b> <br><br>
+                C++ extends C language with OOP features.
+            </p>
+        </div>
+        <!-- Box 2 -->
+        <div class="box">
+            <a href="https://drive.google.com/drive/folders/1gvLrL5Zb2bgvLn4mtz6iWqbI_gX86H1v?usp=sharing" target="_blank">
+                <img src="java.webp" alt="Electronics notes">
+            </a>
+            <p>
+                <b><i>Java Notes</i></b> <br><br>
+                all java related notes are available here
+            </p>
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="box">
+            <a href="https://drive.google.com/drive/folders/1s4dnzdDHYT6fvsbBtMgz1TbTxmNkYrmb?usp=sharing" target="_blank">
+                <img src="python.avif" alt="Google Drive PDF files">
+            </a>
+            <p>
+                <b><i>Python notes</i></b> <br><br>
+                all Python related notes are available here
+            </p>
+        </div>
+    </div>
+
+    <!-- Second image section -->
+    <div class="clickimg2">
+
+        <!-- Box 4 -->
+        
+        <div class="box">
+            <!-- Image with link to handwritten notes -->
+            <a href="https://drive.google.com/drive/folders/10ouK06xV6mmxMqT7Xln4XKj4aIpO_3vs?usp=sharing" 
+               target="_blank" rel="noopener noreferrer">
+                <img src="website.jpg" alt="Handwritten programming notes">
+            </a>
+            <p>
+                <b><i>Css notes</i></b> <br><br>
+                <i> all notes which sufficent to learn css is available</i>
+            </p>
+        </div>
+        <!-- Box 5 -->
+        <div class="box2">
+            <a href="https://drive.google.com/drive/folders/1EJVn_AJ2ezaH68ZzJ-NrrXbaY0usl0UX?usp=sharing">
+                <img src="js.jpg" alt="MDN Web Docs">
+            </a>
+            <p>
+                <b><i>JAVA SCRIPT</i></b> <br><br>
+               all J.s  related notes are available here
+            </p>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box2">
+            <a href="https://drive.google.com/drive/folders/1-re5E4uuJCdiMbNM4YqdXtGRTEOajFRS?usp=sharing" target="_blank">
+                <img src="html.jpg" alt="GitHub account">
+            </a>
+            <p>
+                <b><i>HTML Notes</i></b> <br><br>
+
+                html is skeleton of web site creation 
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- third section of image  -->
+
+    <div class="clickimg2">
+
+        <!-- Box 4 -->
+        
+        <div class="box">
+            <!-- Image with link to handwritten notes -->
+            <a href="https://drive.google.com/drive/folders/1a2C0C_qrmCcG8FokyZ0O5Bo6Qg-zKQh4?usp=sharing" 
+               target="_blank" rel="noopener noreferrer">
+                <img src="SQL.png" alt="Handwritten programming notes">
+            </a>
+            <p>
+                <b><i>SQL notes</i></b> <br><br>
+                <i> all notes which sufficent to learn SQL is available</i>
+            </p>
+        </div>
+        <!-- Box 5 -->
+        <div class="box2">
+            <a href="https://drive.google.com/drive/folders/1QHmGziPBvE4g-b-SDn68SLuApNoekgD5?usp=sharing">
+                <img src="networking.webp" alt="MDN Web Docs">
+            </a>
+            <p>
+               <b><i>Networking notes</i></b>   <br><br>
+               all J.s  related notes are available here
+            </p>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box2">
+            <a href="https://drive.google.com/drive/folders/1dJvhZZUA5q0aJKAkKw9gecNJVlnOSnl6?usp=sharing" target="_blank">
+                <img src="notes.webp" alt="GitHub account">
+            </a>
+            <p>
+                <b><i>Notes</i></b>  <br><br>
+
+                all extra notes are available in this section 
+            </p>
+        </div>
+
+    </div>
+
+
+
+    
+</div>
+
+<!-- Script file for menu + typing animation -->
+<script src="script.js"></script>
+</body>
+</html>
+
